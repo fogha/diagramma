@@ -20,5 +20,22 @@
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <p style="text-align:center;padding:24px;color:#8b949e;font-family:sans-serif;">
+        <a href="privacy.html" style="color:#58a6ff;">Privacy Policy</a> ·
+        <a href="terms.html" style="color:#58a6ff;">Terms of Service</a>
+      </p>
+    </noscript>
+    <footer id="legal-footer" style="position:fixed;bottom:0;left:0;right:0;text-align:center;padding:8px;font-size:12px;font-family:-apple-system,BlinkMacSystemFont,sans-serif;color:#8b949e;background:#0d1117;z-index:0;">
+      <a href="privacy.html" style="color:#58a6ff;text-decoration:none;">Privacy Policy</a> &middot;
+      <a href="terms.html" style="color:#58a6ff;text-decoration:none;">Terms of Service</a> &middot;
+      <a href="support.html" style="color:#58a6ff;text-decoration:none;">Support</a>
+    </footer>
+    <script>
+      if (window.location.search.includes('gas=1') || window !== window.top) {
+        var f = document.getElementById('legal-footer');
+        if (f) f.style.display = 'none';
+      }
+    </script>
   </body>
 </html>
