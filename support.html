@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diagramma – Support</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0d1117; color: #c9d1d9; line-height: 1.7; padding: 48px 24px; }
+    .container { max-width: 680px; margin: 0 auto; }
+    h1 { font-size: 28px; font-weight: 600; color: #e6edf3; margin-bottom: 8px; }
+    .subtitle { font-size: 15px; color: #8b949e; margin-bottom: 32px; }
+    h2 { font-size: 18px; font-weight: 600; color: #e6edf3; margin-top: 28px; margin-bottom: 8px; }
+    p, li { font-size: 15px; margin-bottom: 12px; }
+    ol, ul { padding-left: 24px; }
+    code { background: #161b22; padding: 2px 6px; border-radius: 4px; font-size: 14px; color: #e6edf3; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .back { display: inline-block; margin-bottom: 24px; font-size: 13px; color: #8b949e; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="back" href=".">&larr; Back to Diagramma</a>
+    <h1>Support</h1>
+    <p class="subtitle">How to use Diagramma and get help</p>
+
+    <h2>Getting Started</h2>
+    <ol>
+      <li>Open a Google Doc and go to <strong>Extensions &gt; Diagramma &gt; Open Editor</strong>.</li>
+      <li>The sidebar will show all diagram blocks found in your document.</li>
+      <li>Write a Mermaid diagram in a fenced code block:
+        <br><code>```mermaid</code><br>
+        <code>flowchart TD</code><br>
+        <code>&nbsp;&nbsp;A --&gt; B</code><br>
+        <code>```</code>
+      </li>
+      <li>Click <strong>Edit</strong> on a block to open the full editor with live preview.</li>
+      <li>Click <strong>Replace with PNG</strong> to insert a rendered image into the document.</li>
+    </ol>
+
+    <h2>Supported Diagram Types</h2>
+    <p>Diagramma supports all Mermaid diagram types including flowcharts, sequence diagrams, class diagrams, state diagrams, ER diagrams, Gantt charts, pie charts, and more. See the <a href="https://mermaid.js.org/intro/">Mermaid documentation</a> for the full syntax reference.</p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <h2>The editor doesn't show my diagram</h2>
+    <p>Click the <strong>Retry</strong> button in the preview panel, or check your Mermaid syntax for errors — the error message will appear in the preview area.</p>
+
+    <h2>Can I edit a PNG diagram back to code?</h2>
+    <p>Yes. When you replace a code block with a PNG, Diagramma stores the original source in the image metadata. Click <strong>Edit</strong> on a PNG block in the sidebar to reopen it in the editor.</p>
+
+    <h2>Does Diagramma send my data anywhere?</h2>
+    <p>No. All rendering happens locally in your browser. No document content is sent to any server. See our <a href="privacy.html">Privacy Policy</a>.</p>
+
+    <h2>Report a Bug</h2>
+    <p>Open an issue on <a href="https://github.com/fogha/diagramma/issues">GitHub</a> with a description of the problem, your browser, and any error messages from the browser console.</p>
+
+    <h2>Source Code</h2>
+    <p>Diagramma is open source: <a href="https://github.com/fogha/diagramma">github.com/fogha/diagramma</a></p>
+  </div>
+</body>
+</html>
